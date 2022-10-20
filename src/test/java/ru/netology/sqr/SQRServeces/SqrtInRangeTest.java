@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class SqrtInRangeTest {
 
     @Test
-    public void zeroRange(){
+    public void zeroRange() {
         SqrtInRange service = new SqrtInRange();
 
         int expected = 0;
@@ -18,7 +18,7 @@ public class SqrtInRangeTest {
     }
 
     @Test
-    public void numberOutRange(){
+    public void numberOutRange() {
         SqrtInRange service = new SqrtInRange();
 
         int expected = 0;
@@ -28,7 +28,7 @@ public class SqrtInRangeTest {
     }
 
     @Test
-    public void negativeRange(){
+    public void negativeRange() {
         SqrtInRange service = new SqrtInRange();
 
         int expected = 0;
