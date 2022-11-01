@@ -1,18 +1,17 @@
 package ru.netology.sqr.SQRServeces;
 
 public class SqrtInRange {
-    public int calkSqrt(int x, int y) {
-        for (int a = 10; a <= 99; a++) {
-            if (a * a >= x) {
-                for (int b = a, c = 0; b <= 99; b++, c++) {
-                    if (b * b > y) {
-                        return c;
+    public int calkSqrt(int lowLimit, int highLimit) {
+        int counter = 0;
+
+        for (int i = 10; i <= 99; i++) {
+            if (i * i >= lowLimit) {
+                    if (i * i <= highLimit) {
+                        counter++;
                     }
                 }
-                return -1;
             }
-        }
-        return -1;
+        return counter;
     }
 }
 

@@ -49,7 +49,7 @@ public class SqrtInRangeTest {
     public void outsideRange() {
         SqrtInRange service = new SqrtInRange();
 
-        int expected = -1;
+        int expected = 0;
         int actual = service.calkSqrt(2_600_000, 3_000_000);
 
         Assertions.assertEquals(expected, actual);
